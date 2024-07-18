@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <title>TravelBloom</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+</head>
+
+<body>
+    <nav>
+        <div>
+            <h1>TravelBloom</h1>
+        </div>
+        <div>
+            <ul>
+                <li><a href="travel_recommendation.html">Home</a></li>
+                <li><a href="./about.html">About Us</a></li>
+                <li><a href="./contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="search-bar-div">
+            <input type="search" id="search-bar" name="q" placeholder="Enter a destination or keyword"
+                aria-label="Search through site content">
+            <input type="button" onclick="onSearch()" value="Search">
+            <input type="button" onclick="btnClear()" value="Clear">
+        </div>
+
+    </nav>
+    <div class="body home-grid">
+        <div class="home-grid-block">
+            <div class="viewport-centered">
+                <h1>Explore<br>Dream<br>Destination</h1>
+                <p>It encourages exploration of unfamiliar territories, embracing diverse cultures
+                    and landscapes, while pursuing the desired destination that captivates
+                    the heart and ignites a sense of wander.1
+                </p>
+            </div>
+        </div>
+        <div id="search-result" class="home-grid-block search-result"></div>
+    </div>
+
+</body>
+
+</html>
+
+<script src='travel_recommendation.js'></script>
