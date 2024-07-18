@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset='utf-8'>
+    <title>TravelBloom</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+</head>
+
+<body>
+    <nav>
+        <div>
+            <h1>TravelBloom</h1>
+        </div>
+        <div>
+            <ul>
+                <li><a href="travel_recommendation.html">Home</a></li>
+                <li><a href="./about.html">About Us</a></li>
+                <li><a href="./contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="search-bar-div">
+            <input type="search" id="search-bar" name="q" placeholder="Enter a destination or keyword"
+                aria-label="Search through site content">
+            <input type="button" onclick="onSearch()" value="Search">
+            <input type="button" onclick="btnClear()" value="Clear">
+        </div>
+
+    </nav>
+
+    <div class="body contact">
+        <div class="contact-info">
+            <h1>Contact Us</h1>
+            <p>Get in touch.</p>
+        </div>
+        <div class="form-container">
+            <form action="" method="post">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name" autocomplete="name">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Enter your email" autocomplete="email">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" placeholder="Enter your message" autocomplete="off"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit">Submit</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
